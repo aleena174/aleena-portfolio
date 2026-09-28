@@ -1,0 +1,51 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Mobile Hamburger Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // 2. Dark/Light Mode Switcher
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = document.body.getAttribute('data-theme');
+        if (currentTheme === 'dark') {
+            document.body.removeAttribute('data-theme');
+            themeToggleBtn.textContent = '🌙 Dark Mode';
+        } else {
+            document.body.setAttribute('data-theme', 'dark');
+            themeToggleBtn.textContent = '☀️ Light Mode';
+        }
+    });
+
+    // 3. Contact Form JS Validation
+    const contactForm = document.getElementById('contact-form');
+    const formFeedback = document.getElementById('form-feedback');
+
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (name === '' || email === '' || message === '') {
+            formFeedback.style.color = 'red';
+            formFeedback.textContent = 'Please fill out all fields.';
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            formFeedback.style.color = 'red';
+            formFeedback.textContent = 'Please enter a valid email address.';
+            return;
+        }
+
+        formFeedback.style.color = 'green';
+        formFeedback.textContent = 'Thank you! Your message has been sent successfully.';
+        contactForm.reset();
+    });
+});
