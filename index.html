@@ -1,1 +1,149 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleena Kanwal | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Aleena Kanwal</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                &#9776;
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero / Introduction Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Aleena Kanwal</span></h1>
+                <p class="tagline">BS Economics Student | Aspiring Data Analyst & Web Developer</p>
+                <a href="#contact" class="btn">Get In Touch</a>
+            </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="about-card">
+                <p>
+                    I am currently a <strong>BS Economics (5th Semester)</strong> student with a <strong>CGPA of 3.23</strong>. 
+                    I have a strong foundation in economic data modeling and web technology principles. My goal is to bridge data-driven 
+                    economic insights with dynamic, interactive digital platforms using modern web technologies and data analytics tools.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML5, CSS3 (Flexbox & Grid), Vanilla JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Data Analytics</h3>
+                    <p>Data Wrangling, Economic Modeling, Statistical Analysis</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Software</h3>
+                    <p>MS Excel, Power BI, SQL, Git & GitHub</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects Section -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/300x180" alt="Economic Dashboard Preview">
+                    <h3>Macroeconomic Trends Dashboard</h3>
+                    <p>An interactive data visualizer analyzing GDP growth, inflation, and trade balances using Power BI and Excel datasets.</p>
+                    <span class="tech-tag">Power BI / Excel</span>
+                    <div class="project-links">
+                        <a href="https://github.com/aleenakanwal" target="_blank" class="link-btn">Code</a>
+                        <a href="#" class="link-btn">Live Demo</a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/300x180" alt="Interactive Web App Preview">
+                    <h3>Budget Allocation Calculator</h3>
+                    <p>A JavaScript-powered responsive tool built with pure HTML, CSS, and JS to calculate utility index and budget distribution.</p>
+                    <span class="tech-tag">HTML / CSS / JS</span>
+                    <div class="project-links">
+                        <a href="https://github.com/aleenakanwal" target="_blank" class="link-btn">Code</a>
+                        <a href="#" class="link-btn">Live Demo</a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <img src="https://via.placeholder.com/300x180" alt="Data Analytics Survey Preview">
+                    <h3>Market Demographics & Survey Analysis</h3>
+                    <p>Statistical report and data cleaning project assessing price elasticities and consumer behavior patterns.</p>
+                    <span class="tech-tag">Data Analytics / Excel</span>
+                    <div class="project-links">
+                        <a href="https://github.com/aleenakanwal" target="_blank" class="link-btn">Code</a>
+                        <a href="#" class="link-btn">Live Demo</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 5. Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="form-feedback" class="feedback-msg"></p>
+            </form>
+
+            <div class="social-links">
+                <a href="mailto:aleena@example.com">Email</a> | 
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com" target="_blank">GitHub</a> | 
+                <a href="https://wa.me/" target="_blank">WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 6. Footer Section -->
+    <footer>
+        <p>&copy; 2026 Aleena Kanwal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
